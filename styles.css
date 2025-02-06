@@ -1,0 +1,97 @@
+* {
+    font-family: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 18/1.5 Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    padding: 2em;
+    background-color: gray;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+details {
+    width: 1000px;
+    padding: 1em;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+details:hover {
+    border: 1px solid gainsboro;
+    background-color: gainsboro;
+    cursor:pointer;
+}
+details[open] {
+    width: 1400px;
+}
+details[open] summary {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+summary {
+    font-size: 2em;
+    color: gray;
+    display: block;
+}
+ul {
+    flex-wrap: wrap;
+    padding-top: 1em;
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+}
+li {
+    flex: 0 1 15em;
+}
+@media (max-width: 1400px) {
+    details[open] {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    details[open] {
+        width: 100%;
+    }
+    li {
+        flex: 0 1 12em;
+    }
+}
+@media (max-width: 1000px) {
+    details, details[open] {
+        width: 100%;
+    }
+    summary {
+        font-size: 1.5em;
+    }
+    li {
+        flex: 0 1 10em;
+    }
+}
+@media (max-width: 800px) {
+    summary {
+        font-size: 1.25em;
+    }
+}
+@media (max-width: 600px) {
+    summary {
+        font-size: 1em;
+    }
+}
