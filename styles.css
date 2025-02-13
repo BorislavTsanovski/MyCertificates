@@ -34,6 +34,8 @@ details {
 details:hover {
     border: 1px solid gainsboro;
     background-color: gainsboro;
+}
+li:hover {
     cursor: pointer;
 }
 details[open] {
