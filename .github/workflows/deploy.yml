@@ -1,4 +1,4 @@
-name: Library Workflow
+name: Certificates
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
     
 jobs:
-  deploy-be:
+  deploy:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v3
