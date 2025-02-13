@@ -1,0 +1,18 @@
+name: Library Workflow
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+    
+jobs:
+  deploy-be:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v3
+        - uses: JorgeLNJunior/render-deploy@v1.4.4
+          with:
+            service_id: ${{ secrets.RENDER_DEPLOY_KEY }}
+            api_key: ${{ secrets.RENDER_API_KEY }}
+            wait_deploy: true 
