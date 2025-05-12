@@ -32,8 +32,8 @@ details {
     text-align: center;
 }
 details:hover {
-    border: 1px solid gainsboro;
-    background-color: gainsboro;
+    border: 1px solid rgb(240,240,240);
+    background-color: rgb(240,240,240);
 }
 li:hover {
     cursor: pointer;
