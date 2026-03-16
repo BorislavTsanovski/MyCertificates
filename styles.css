@@ -39,7 +39,7 @@ li:hover {
     cursor: pointer;
 }
 details[open] {
-    width: 1400px;
+    width: 1600px;
 }
 details[open] summary {
     text-align: center;
@@ -61,14 +61,14 @@ ul {
     margin: 0 auto;
 }
 li {
-    flex: 0 1 15em;
+    flex: 0 1 14em;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     details[open] {
         width: 100%;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1530px) {
     details[open] {
         width: 100%;
     }
@@ -76,7 +76,7 @@ li {
         flex: 0 1 12em;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
     details, details[open] {
         width: 100%;
     }
